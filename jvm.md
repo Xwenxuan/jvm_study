@@ -1,6 +1,6 @@
 # jvm
 
-![image-20210806165207796](/Users/bongo/Library/Application Support/typora-user-images/image-20210806165207796.png)
+![image-20210806165207796](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210806165207796.png)
 
 class 文件 == 字节码文件
 
@@ -32,7 +32,7 @@ JVM是基于栈的架构方式，可移植性好
 
 ## 类加载器
 
-![image-20210809113813869](/Users/bongo/Library/Application Support/typora-user-images/image-20210809113813869.png)
+![image-20210928111724745](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111724745.png)
 
 加载 -> 链接 -> 初始化
 
@@ -99,11 +99,11 @@ JVM是基于栈的架构方式，可移植性好
 
 ## 运行时数据区 对应Runtime类（只有一个）
 
-![image-20210809172437888](/Users/bongo/Library/Application Support/typora-user-images/image-20210809172437888.png)
+![image-20210928111738220](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111738220.png)
 
-![image-20210809172558063](/Users/bongo/Library/Application Support/typora-user-images/image-20210809172558063.png)
+![image-20210928111748655](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111748655.png)
 
-![image-20210810112757446](/Users/bongo/Library/Application Support/typora-user-images/image-20210810112757446.png)
+![image-20210928111816105](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111816105.png)
 
 线程共享：方法区、堆
 
@@ -147,7 +147,7 @@ JVM中的线程：
 
 * 栈桢的内部结构
 
-  ![image-20210810172307928](/Users/bongo/Library/Application Support/typora-user-images/image-20210810172307928.png)
+  ![image-20210928111826128](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111826128.png)
 
   * 局部变量表
 
@@ -177,7 +177,7 @@ JVM中的线程：
 
     
 
-    ![image-20210821155605574](/Users/bongo/Library/Application Support/typora-user-images/image-20210821155605574.png)
+    ![image-20210928111835006](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111835006.png)
 
     
 
@@ -252,7 +252,7 @@ JVM中的线程：
 
 一个进程-> 一个JVM实例 -> 一个运行时数据区
 
-![image-20210825103904193](/Users/bongo/Library/Application Support/typora-user-images/image-20210825103904193.png)
+![image-20210928111850239](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111850239.png)
 
 * 基本概念
   * 在JVM启动时就创建，大小也确定了，是JVM最大的一块内存
@@ -266,7 +266,7 @@ JVM中的线程：
   
 * 内存细分
   
-  ![image-20210825215404652](/Users/bongo/Library/Application Support/typora-user-images/image-20210825215404652.png)
+  ![image-20210928111903776](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111903776.png)
   
   * Java 7 及以前分为：新生区+养老区+永久区
   * Java 8及之后则是：新生区+养老区+元空间（元空间其实是方法区了）
@@ -314,18 +314,18 @@ JVM中的线程：
 
 ### 方法区（元空间）
 
-![image-20210901175419598](/Users/bongo/Library/Application Support/typora-user-images/image-20210901175419598.png)
+![image-20210928111914276](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111914276.png)
 
 * 逻辑上属于堆的一部分，但一些简单的实现不回去选择垃圾回收或进行压缩
 * 方法区的大小决定了系统可以保存多少个类，如果定义了太多的类，导致方法区溢出，会OOM
 
 #### 方法区内部结构
 
-![image-20210901214915624](/Users/bongo/Library/Application Support/typora-user-images/image-20210901214915624.png)
+![image-20210928111923911](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111923911.png)
 
 
 
-![image-20210902093743205](/Users/bongo/Library/Application Support/typora-user-images/image-20210902093743205.png)
+![image-20210928111932413](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111932413.png)
 
 
 
@@ -396,11 +396,11 @@ JVM中的线程：
 
 1. 句柄访问
 
-   ![image-20210926172028233](/Users/bongo/Library/Application Support/typora-user-images/image-20210926172028233.png)
+   ![image-20210928111942091](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111942091.png)
 
 2. 直接指针
 
-   ![image-20210926172104536](/Users/bongo/Library/Application Support/typora-user-images/image-20210926172104536.png)
+   ![image-20210928111946269](https://raw.githubusercontent.com/Xwenxuan/jvm_study/main/img/image-20210928111946269.png)
 
 
 
